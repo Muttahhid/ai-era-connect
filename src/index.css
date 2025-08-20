@@ -2,41 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* AI-Era Solutions Design System - Futuristic Tech Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Futuristic AI Color Palette */
+    --ai-pink: 339 92% 65%;        /* #f72585 */
+    --ai-purple: 280 88% 39%;      /* #7209b7 */
+    --ai-dark-purple: 267 94% 22%; /* #3a0ca3 */
+    --ai-blue: 230 85% 60%;        /* #4361ee */
+    --ai-cyan: 190 75% 65%;        /* #4cc9f0 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Base colors */
+    --background: 267 94% 3%;       /* Very dark purple background */
+    --foreground: 190 75% 95%;      /* Light cyan text */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --card: 267 94% 6%;
+    --card-foreground: 190 75% 90%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --popover: 267 94% 8%;
+    --popover-foreground: 190 75% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --primary: 339 92% 65%;         /* AI Pink */
+    --primary-foreground: 267 94% 5%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --secondary: 280 88% 39%;       /* AI Purple */
+    --secondary-foreground: 190 75% 95%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 267 94% 12%;
+    --muted-foreground: 190 30% 60%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --accent: 230 85% 60%;          /* AI Blue */
+    --accent-foreground: 267 94% 5%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 190 75% 95%;
 
-    --radius: 0.5rem;
+    --border: 267 60% 15%;
+    --input: 267 60% 10%;
+    --ring: 339 92% 65%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--ai-pink)), hsl(var(--ai-purple)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--ai-blue)), hsl(var(--ai-cyan)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--ai-dark-purple)), hsl(var(--ai-blue)), hsl(var(--ai-cyan)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--ai-dark-purple) / 0.3), hsl(var(--ai-purple) / 0.1));
+
+    /* Shadows and Effects */
+    --shadow-neon: 0 0 30px hsl(var(--ai-pink) / 0.3), 0 0 60px hsl(var(--ai-blue) / 0.2);
+    --shadow-card: 0 20px 40px hsl(var(--ai-dark-purple) / 0.3);
+    --shadow-button: 0 8px 25px hsl(var(--ai-pink) / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.3s ease;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +121,60 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
+}
+
+@layer components {
+  /* Custom component classes using design system */
+  .ai-gradient-text {
+    @apply bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent;
+  }
+
+  .ai-glow-button {
+    @apply transition-all duration-300 hover:shadow-[var(--shadow-button)] hover:scale-105;
+  }
+
+  .ai-card-glow {
+    @apply transition-all duration-300 hover:shadow-[var(--shadow-card)] hover:scale-[1.02];
+  }
+
+  .ai-neon-border {
+    @apply border border-primary/20 hover:border-primary/50 hover:shadow-[var(--shadow-neon)];
+  }
+
+  .floating-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+}
+
+@layer utilities {
+  .text-gradient-hero {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 20px hsl(var(--ai-pink) / 0.3); }
+  100% { box-shadow: 0 0 40px hsl(var(--ai-blue) / 0.5), 0 0 60px hsl(var(--ai-cyan) / 0.3); }
 }

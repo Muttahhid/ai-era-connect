@@ -61,7 +61,27 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// AI-Era Custom Colors
+				'ai-pink': 'hsl(var(--ai-pink))',
+				'ai-purple': 'hsl(var(--ai-purple))',
+				'ai-dark-purple': 'hsl(var(--ai-dark-purple))',
+				'ai-blue': 'hsl(var(--ai-blue))',
+				'ai-cyan': 'hsl(var(--ai-cyan))'
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'neon': 'var(--shadow-neon)',
+				'card-glow': 'var(--shadow-card)',
+				'button-glow': 'var(--shadow-button)'
+			},
+			fontFamily: {
+				'mono': ['JetBrains Mono', 'monospace'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

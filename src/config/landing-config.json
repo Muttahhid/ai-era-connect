@@ -1,0 +1,169 @@
+{
+  "hero": {
+    "headline": "Turn Hours Into Seconds — Welcome to the AI Era",
+    "subtext": "We transform your workflows with AI-powered automation and 1000+ seamless integrations, connecting the tools you already use.",
+    "primaryCTA": "Get Started Today",
+    "secondaryCTA": "Book a Free Demo"
+  },
+  "problem": {
+    "headline": "Manual work is slowing your business down.",
+    "points": [
+      "Hours wasted on repetitive tasks",
+      "Costly errors and bottlenecks",
+      "Scattered tools that don't talk to each other",
+      "Teams spending more time managing processes than creating value"
+    ],
+    "solution": "AI-Era Solutions makes all that a thing of the past."
+  },
+  "solution": {
+    "headline": "From Manual to Intelligent — In Seconds.",
+    "description": "We connect your existing tools with 1000+ integrations, and power them with automation and AI — so your business works faster, smarter, and with fewer errors."
+  },
+  "benefits": [
+    {
+      "icon": "⚡",
+      "title": "Save Time",
+      "description": "Eliminate repetitive manual tasks instantly."
+    },
+    {
+      "icon": "🔗",
+      "title": "1000+ Integrations",
+      "description": "Works with your favorite tools out of the box."
+    },
+    {
+      "icon": "🤖",
+      "title": "AI-Powered",
+      "description": "Smarter workflows that learn and adapt."
+    },
+    {
+      "icon": "📈",
+      "title": "Boost Productivity",
+      "description": "Focus your team on what truly matters."
+    },
+    {
+      "icon": "🌍",
+      "title": "Scalable",
+      "description": "Solutions that grow as your business grows."
+    }
+  ],
+  "howItWorks": {
+    "headline": "How It Works",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Discover",
+        "description": "We analyze your current processes and pain points."
+      },
+      {
+        "number": "2",
+        "title": "Design",
+        "description": "We create an automation blueprint tailored to your needs."
+      },
+      {
+        "number": "3",
+        "title": "Deploy",
+        "description": "AI-powered workflows are integrated with your existing tools."
+      },
+      {
+        "number": "4",
+        "title": "Support",
+        "description": "Continuous monitoring and optimization keep you ahead."
+      }
+    ],
+    "cta": "Start Your Free Workflow Audit"
+  },
+  "useCases": [
+    {
+      "icon": "📩",
+      "title": "Customer Support",
+      "description": "Auto-route, tag, and respond to emails in seconds."
+    },
+    {
+      "icon": "🛒",
+      "title": "E-commerce",
+      "description": "Sync inventory, update orders, and notify customers automatically."
+    },
+    {
+      "icon": "📊",
+      "title": "Finance & HR",
+      "description": "Generate reports, process invoices, and onboard staff effortlessly."
+    },
+    {
+      "icon": "🚚",
+      "title": "Logistics",
+      "description": "Connect systems so one update syncs tracking, invoicing, and notifications."
+    },
+    {
+      "icon": "🎓",
+      "title": "Education",
+      "description": "Automate student registrations, feedback, and grading."
+    }
+  ],
+  "pricing": {
+    "headline": "Flexible Pricing for Every Business",
+    "plans": [
+      {
+        "name": "Starter",
+        "description": "For small teams",
+        "price": "Contact Us"
+      },
+      {
+        "name": "Professional",
+        "description": "For growing businesses",
+        "price": "Contact Us"
+      },
+      {
+        "name": "Enterprise",
+        "description": "For mission-critical operations",
+        "price": "Contact Us"
+      }
+    ],
+    "cta": "View Pricing Plans"
+  },
+  "finalCTA": {
+    "headline": "Step Into the Future of Work",
+    "subtext": "Join the businesses already saving hours every week with AI-powered automation.",
+    "cta": "Book Your Free Demo"
+  },
+  "contact": {
+    "apiEndpoint": "http://raspberrypi.muttahhid.com/webhook/246b4a7a-8cad-4d6e-96aa-92c1b5055676",
+    "fields": [
+      {
+        "name": "firstName",
+        "label": "First Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "lastName",
+        "label": "Last Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "organisation",
+        "label": "Organisation",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "phoneNumber",
+        "label": "Phone Number",
+        "type": "tel",
+        "required": true
+      },
+      {
+        "name": "message",
+        "label": "Message",
+        "type": "textarea",
+        "required": true
+      }
+    ]
+  }
+}
