@@ -5,98 +5,138 @@
     "primaryCTA": "Get Started Today",
     "secondaryCTA": "Book a Free Demo"
   },
-  "problem": {
-    "headline": "Manual work is slowing your business down.",
-    "points": [
-      "Hours wasted on repetitive tasks",
-      "Costly errors and bottlenecks",
-      "Scattered tools that don't talk to each other",
-      "Teams spending more time managing processes than creating value"
-    ],
-    "solution": "AI-Era Solutions makes all that a thing of the past."
+  "testimonials": {
+    "headline": "Trusted by Industry Leaders",
+    "subtext": "See how companies like yours are saving 40+ hours per week",
+    "testimonials": [
+      {
+        "name": "Sarah Chen",
+        "position": "Operations Director",
+        "company": "TechFlow Solutions",
+        "content": "AI-Era Solutions reduced our manual processing time by 85%. What used to take our team 2 days now happens in 2 hours.",
+        "savings": "40 hours/week saved"
+      },
+      {
+        "name": "Marcus Rodriguez",
+        "position": "CEO",
+        "company": "GrowthStack Inc",
+        "content": "The ROI was immediate. We've eliminated human errors and increased our team's capacity by 300% without hiring.",
+        "savings": "$50K+ annual savings"
+      },
+      {
+        "name": "Emily Watson",
+        "position": "Head of Operations",
+        "company": "DataSync Corp",
+        "content": "Integration was seamless. Within 48 hours, our entire workflow was automated and our team was focusing on strategic work.",
+        "savings": "2-day implementation"
+      }
+    ]
   },
-  "solution": {
-    "headline": "From Manual to Intelligent — In Seconds.",
-    "description": "We connect your existing tools with 1000+ integrations, and power them with automation and AI — so your business works faster, smarter, and with fewer errors."
+  "roi": {
+    "headline": "Measurable ROI in 30 Days or Less",
+    "subtext": "Our clients typically see these results within the first month",
+    "metrics": [
+      {
+        "number": "85%",
+        "label": "Reduction in Manual Tasks",
+        "description": "Average time saved on repetitive processes"
+      },
+      {
+        "number": "300%",
+        "label": "Increase in Team Capacity",
+        "description": "Same team, triple the output"
+      },
+      {
+        "number": "99.9%",
+        "label": "Accuracy Rate",
+        "description": "Virtually eliminate human errors"
+      },
+      {
+        "number": "48hrs",
+        "label": "Average Setup Time",
+        "description": "From consultation to full automation"
+      }
+    ]
   },
   "benefits": [
     {
-      "icon": "⚡",
-      "title": "Save Time",
-      "description": "Eliminate repetitive manual tasks instantly."
+      "title": "Save 40+ Hours Weekly",
+      "description": "Eliminate repetitive manual tasks and focus your team on strategic work that drives growth."
     },
     {
-      "icon": "🔗",
-      "title": "1000+ Integrations",
-      "description": "Works with your favorite tools out of the box."
+      "title": "1000+ Seamless Integrations", 
+      "description": "Connect every tool in your stack - from CRM to accounting, email to inventory management."
     },
     {
-      "icon": "🤖",
-      "title": "AI-Powered",
-      "description": "Smarter workflows that learn and adapt."
+      "title": "AI-Powered Intelligence",
+      "description": "Smart workflows that learn from your data and continuously optimize for better results."
     },
     {
-      "icon": "📈",
-      "title": "Boost Productivity",
-      "description": "Focus your team on what truly matters."
+      "title": "300% Capacity Increase",
+      "description": "Scale your operations without hiring - same team, triple the output."
     },
     {
-      "icon": "🌍",
-      "title": "Scalable",
-      "description": "Solutions that grow as your business grows."
+      "title": "Enterprise-Grade Security",
+      "description": "Bank-level encryption and compliance with SOC2, GDPR, and industry standards."
     }
   ],
   "howItWorks": {
-    "headline": "How It Works",
+    "headline": "From Setup to Success in 48 Hours",
+    "subtext": "Our proven process delivers results fast",
     "steps": [
       {
         "number": "1",
-        "title": "Discover",
-        "description": "We analyze your current processes and pain points."
+        "title": "Free Audit",
+        "description": "30-minute workflow analysis identifying automation opportunities worth $50K+ annually"
       },
       {
-        "number": "2",
-        "title": "Design",
-        "description": "We create an automation blueprint tailored to your needs."
+        "number": "2", 
+        "title": "Custom Blueprint",
+        "description": "Tailored automation strategy with ROI projections and implementation timeline"
       },
       {
         "number": "3",
-        "title": "Deploy",
-        "description": "AI-powered workflows are integrated with your existing tools."
+        "title": "Rapid Deployment",
+        "description": "Expert implementation with zero downtime - your team stays productive"
       },
       {
         "number": "4",
-        "title": "Support",
-        "description": "Continuous monitoring and optimization keep you ahead."
+        "title": "Ongoing Optimization",
+        "description": "AI continuously learns and improves your workflows for maximum efficiency"
       }
     ],
     "cta": "Start Your Free Workflow Audit"
   },
   "useCases": [
     {
-      "icon": "📩",
+      "title": "Sales Operations",
+      "description": "Automate lead scoring, follow-ups, and pipeline management. Increase conversion rates by 40%.",
+      "results": "40% higher conversion"
+    },
+    {
       "title": "Customer Support",
-      "description": "Auto-route, tag, and respond to emails in seconds."
+      "description": "Intelligent ticket routing, auto-responses, and escalation. Reduce response time by 90%.",
+      "results": "90% faster response"
     },
     {
-      "icon": "🛒",
-      "title": "E-commerce",
-      "description": "Sync inventory, update orders, and notify customers automatically."
+      "title": "Financial Operations",
+      "description": "Automated invoicing, expense tracking, and reporting. Eliminate 95% of manual entry.",
+      "results": "95% less manual work"
     },
     {
-      "icon": "📊",
-      "title": "Finance & HR",
-      "description": "Generate reports, process invoices, and onboard staff effortlessly."
+      "title": "Marketing Automation",
+      "description": "Lead nurturing, campaign management, and analytics. Triple your marketing efficiency.",
+      "results": "3x marketing efficiency"
     },
     {
-      "icon": "🚚",
-      "title": "Logistics",
-      "description": "Connect systems so one update syncs tracking, invoicing, and notifications."
+      "title": "Data Management",
+      "description": "Real-time data sync across platforms. Always have accurate, up-to-date information.",
+      "results": "100% data accuracy"
     },
     {
-      "icon": "🎓",
-      "title": "Education",
-      "description": "Automate student registrations, feedback, and grading."
+      "title": "HR & Onboarding",
+      "description": "Streamline recruitment, onboarding, and employee management. Cut admin time by 80%.",
+      "results": "80% less admin time"
     }
   ],
   "pricing": {
