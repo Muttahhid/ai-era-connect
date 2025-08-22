@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { HeroSection } from "@/components/HeroSection";
-import { ProblemSection } from "@/components/ProblemSection";
-import { BenefitsSection } from "@/components/BenefitsSection";
-import { HowItWorksSection } from "@/components/HowItWorksSection";
-import { UseCasesSection } from "@/components/UseCasesSection";
+import { DashboardSection } from "@/components/DashboardSection";
+import { CustomerSupportSection } from "@/components/CustomerSupportSection";
+import { WorkflowAutomationSection } from "@/components/WorkflowAutomationSection";
+import { ProcessSection } from "@/components/ProcessSection";
+import { WorkInActionSection } from "@/components/WorkInActionSection";
+import { FAQSection } from "@/components/FAQSection";
 import { ContactForm } from "@/components/ContactForm";
-import { FinalCTASection } from "@/components/FinalCTASection";
 import landingConfig from "@/config/landing-config.json";
 
 const Index = () => {
@@ -27,24 +28,28 @@ const Index = () => {
           <HeroSection config={config.hero} />
         </div>
         
-        <div id="problem">
-          <ProblemSection config={config.problem} />
+        <div id="dashboard">
+          <DashboardSection />
         </div>
         
-        <div id="benefits">
-          <BenefitsSection benefits={config.benefits} />
+        <div id="customer-support">
+          <CustomerSupportSection />
         </div>
         
-        <div id="how-it-works">
-          <HowItWorksSection config={config.howItWorks} />
+        <div id="workflow-automation">
+          <WorkflowAutomationSection />
         </div>
         
-        <div id="use-cases">
-          <UseCasesSection useCases={config.useCases} />
+        <div id="process">
+          <ProcessSection />
         </div>
         
-        <div id="final-cta">
-          <FinalCTASection config={config.finalCTA} />
+        <div id="work-in-action">
+          <WorkInActionSection />
+        </div>
+        
+        <div id="faq">
+          <FAQSection />
         </div>
         
         <div id="contact">

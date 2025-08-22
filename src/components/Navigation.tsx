@@ -42,22 +42,22 @@ export const Navigation = () => {
               Home
             </button>
             <button 
-              onClick={() => scrollToSection('benefits')}
+              onClick={() => scrollToSection('dashboard')}
               className="text-foreground hover:text-primary transition-colors"
             >
-              Benefits
+              Features
             </button>
             <button 
-              onClick={() => scrollToSection('how-it-works')}
+              onClick={() => scrollToSection('process')}
               className="text-foreground hover:text-primary transition-colors"
             >
-              How It Works
+              Process
             </button>
             <button 
-              onClick={() => scrollToSection('use-cases')}
+              onClick={() => scrollToSection('work-in-action')}
               className="text-foreground hover:text-primary transition-colors"
             >
-              Use Cases
+              Case Studies
             </button>
             <button 
               onClick={() => scrollToSection('contact')}

@@ -6,54 +6,55 @@
 
 @layer base {
   :root {
-    /* Futuristic AI Color Palette */
-    --ai-pink: 339 92% 65%;        /* #f72585 */
-    --ai-purple: 280 88% 39%;      /* #7209b7 */
-    --ai-dark-purple: 267 94% 22%; /* #3a0ca3 */
-    --ai-blue: 230 85% 60%;        /* #4361ee */
-    --ai-cyan: 190 75% 65%;        /* #4cc9f0 */
+    /* Modern Dark Theme with Orange Accents */
+    --orange: 20 100% 60%;          /* #ff6600 - Primary orange */
+    --orange-light: 25 100% 65%;    /* #ff7a1a */
+    --orange-dark: 15 100% 45%;     /* #e65500 */
+    --dark-blue: 210 30% 8%;        /* #1a1f2e */
+    --navy: 216 28% 7%;             /* #161b26 */
 
     /* Base colors */
-    --background: 267 94% 3%;       /* Very dark purple background */
-    --foreground: 190 75% 95%;      /* Light cyan text */
+    --background: 216 28% 7%;       /* Dark navy background */
+    --foreground: 0 0% 95%;         /* Light text */
 
-    --card: 267 94% 6%;
-    --card-foreground: 190 75% 90%;
+    --card: 210 30% 8%;             /* Slightly lighter dark */
+    --card-foreground: 0 0% 90%;
 
-    --popover: 267 94% 8%;
-    --popover-foreground: 190 75% 95%;
+    --popover: 210 30% 8%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 339 92% 65%;         /* AI Pink */
-    --primary-foreground: 267 94% 5%;
+    --primary: 20 100% 60%;         /* Orange primary */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 280 88% 39%;       /* AI Purple */
-    --secondary-foreground: 190 75% 95%;
+    --secondary: 210 30% 12%;       /* Lighter dark */
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 267 94% 12%;
-    --muted-foreground: 190 30% 60%;
+    --muted: 210 30% 10%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 230 85% 60%;          /* AI Blue */
-    --accent-foreground: 267 94% 5%;
+    --accent: 25 100% 65%;          /* Light orange */
+    --accent-foreground: 216 28% 7%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 190 75% 95%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 267 60% 15%;
-    --input: 267 60% 10%;
-    --ring: 339 92% 65%;
+    --border: 210 30% 15%;
+    --input: 210 30% 10%;
+    --ring: 20 100% 60%;
 
     --radius: 0.75rem;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--ai-pink)), hsl(var(--ai-purple)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--ai-blue)), hsl(var(--ai-cyan)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--ai-dark-purple)), hsl(var(--ai-blue)), hsl(var(--ai-cyan)));
-    --gradient-card: linear-gradient(145deg, hsl(var(--ai-dark-purple) / 0.3), hsl(var(--ai-purple) / 0.1));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--orange)), hsl(var(--orange-dark)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--dark-blue)), hsl(var(--navy)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--navy)), hsl(var(--dark-blue)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--dark-blue) / 0.5), hsl(var(--navy) / 0.3));
+    --gradient-orange: linear-gradient(135deg, hsl(var(--orange)), hsl(var(--orange-light)));
 
     /* Shadows and Effects */
-    --shadow-neon: 0 0 30px hsl(var(--ai-pink) / 0.3), 0 0 60px hsl(var(--ai-blue) / 0.2);
-    --shadow-card: 0 20px 40px hsl(var(--ai-dark-purple) / 0.3);
-    --shadow-button: 0 8px 25px hsl(var(--ai-pink) / 0.4);
+    --shadow-orange: 0 0 30px hsl(var(--orange) / 0.3);
+    --shadow-card: 0 20px 40px hsl(var(--navy) / 0.3);
+    --shadow-button: 0 8px 25px hsl(var(--orange) / 0.4);
 
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
