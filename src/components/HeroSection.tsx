@@ -25,38 +25,40 @@ export const HeroSection = ({ config }: HeroSectionProps) => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/90" />
         <div className="absolute inset-0 bg-gradient-hero opacity-20" />
       </div>
+      
+      {/* Floating elements */}
+      <div className="absolute top-20 left-20 w-20 h-20 bg-gradient-primary rounded-full opacity-30 floating-animation" />
+      <div className="absolute bottom-32 right-32 w-16 h-16 bg-gradient-secondary rounded-full opacity-40 floating-animation" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-1/3 right-20 w-12 h-12 bg-ai-cyan/30 rounded-full floating-animation" style={{ animationDelay: '4s' }} />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            <span className="text-gradient-hero">{config.headline}</span>
+        <div className="max-w-5xl mx-auto space-y-8">
+          {/* Headline */}
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            <span className="text-gradient-hero">
+              {config.headline}
+            </span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
+          {/* Subtext */}
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {config.subtext}
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button 
               variant="hero" 
               size="lg"
-              className="ai-glow-button text-base px-6 py-3"
-              onClick={() => {
-                const element = document.getElementById('contact');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              className="ai-glow-button pulse-glow text-lg px-8 py-4"
             >
-              {config.primaryCTA}
+              🚀 {config.primaryCTA}
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="text-base px-6 py-3"
-              onClick={() => {
-                const element = document.getElementById('contact');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
+              className="ai-neon-border text-lg px-8 py-4"
             >
               {config.secondaryCTA}
             </Button>

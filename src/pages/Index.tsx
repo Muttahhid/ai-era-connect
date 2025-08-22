@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { HeroSection } from "@/components/HeroSection";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
-import { ROISection } from "@/components/ROISection";
+import { ProblemSection } from "@/components/ProblemSection";
 import { BenefitsSection } from "@/components/BenefitsSection";
 import { HowItWorksSection } from "@/components/HowItWorksSection";
 import { UseCasesSection } from "@/components/UseCasesSection";
 import { ContactForm } from "@/components/ContactForm";
 import { FinalCTASection } from "@/components/FinalCTASection";
-import { Chatbot } from "@/components/Chatbot";
 import landingConfig from "@/config/landing-config.json";
 
 const Index = () => {
@@ -29,12 +27,8 @@ const Index = () => {
           <HeroSection config={config.hero} />
         </div>
         
-        <div id="testimonials">
-          <TestimonialsSection config={config.testimonials} />
-        </div>
-        
-        <div id="roi">
-          <ROISection config={config.roi} />
+        <div id="problem">
+          <ProblemSection config={config.problem} />
         </div>
         
         <div id="benefits">
@@ -62,16 +56,13 @@ const Index = () => {
       <footer className="py-12 border-t border-primary/20 bg-gradient-card">
         <div className="container mx-auto px-6 text-center">
           <div className="mb-6">
-            <span className="ai-gradient-text text-xl font-bold">AI-Era Solutions</span>
+            <span className="ai-gradient-text text-2xl font-bold">AI-Era Solutions</span>
           </div>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-muted-foreground">
             © 2024 AI-Era Solutions. Transforming businesses with intelligent automation.
           </p>
         </div>
       </footer>
-      
-      {/* Chatbot */}
-      <Chatbot />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 interface UseCase {
+  icon: string;
   title: string;
   description: string;
-  results: string;
 }
 
 interface UseCasesSectionProps {
@@ -18,35 +18,35 @@ export const UseCasesSection = ({ useCases }: UseCasesSectionProps) => {
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            <span className="ai-gradient-text">Proven Solutions Across Industries</span>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <span className="ai-gradient-text">Real-World Applications</span>
           </h2>
-          <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto">
-            Real automation solutions delivering measurable results for every business function.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            See how AI-Era Solutions transforms businesses across industries with intelligent automation
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {useCases.map((useCase, index) => (
             <div
               key={index}
               className="group relative overflow-hidden"
             >
               {/* Card */}
-              <div className="bg-gradient-card backdrop-blur-sm border border-primary/10 rounded-2xl p-6 h-full ai-card-glow relative z-10">
-                {/* Results Badge */}
-                <div className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold mb-4">
-                  {useCase.results}
+              <div className="bg-gradient-card backdrop-blur-sm border border-primary/10 rounded-2xl p-8 h-full ai-card-glow relative z-10">
+                {/* Icon */}
+                <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  {useCase.icon}
                 </div>
                 
                 {/* Title */}
-                <h3 className="text-lg font-bold mb-3 ai-gradient-text">
+                <h3 className="text-2xl font-bold mb-4 ai-gradient-text">
                   {useCase.title}
                 </h3>
                 
                 {/* Description */}
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   {useCase.description}
                 </p>
               </div>

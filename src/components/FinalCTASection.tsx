@@ -20,27 +20,30 @@ export const FinalCTASection = ({ config }: FinalCTASectionProps) => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-4xl font-bold mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold mb-8">
             <span className="text-gradient-hero">
-              {config.headline}
+              ✨ {config.headline}
             </span>
           </h2>
           
-          <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
             {config.subtext}
           </p>
           
           <Button 
             variant="hero" 
             size="lg"
-            className="ai-glow-button text-base px-6 py-3"
-            onClick={() => {
-              const element = document.getElementById('contact');
-              element?.scrollIntoView({ behavior: 'smooth' });
-            }}
+            className="ai-glow-button pulse-glow text-xl px-12 py-6"
           >
-            {config.cta}
+            🔵 {config.cta}
           </Button>
+          
+          {/* Additional visual elements */}
+          <div className="mt-16 flex justify-center space-x-8 opacity-60">
+            <div className="text-4xl floating-animation">🚀</div>
+            <div className="text-4xl floating-animation" style={{ animationDelay: '1s' }}>⚡</div>
+            <div className="text-4xl floating-animation" style={{ animationDelay: '2s' }}>🤖</div>
+          </div>
         </div>
       </div>
     </section>
