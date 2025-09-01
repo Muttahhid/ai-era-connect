@@ -1,9 +1,17 @@
 {
+  "logo": {
+    "url": "/api/placeholder/150/40",
+    "alt": "AI-Era Solutions Logo"
+  },
   "hero": {
     "headline": "Save Time & Work Smarter With AI Automation",
     "subtext": "Transform your business operations with intelligent automation that connects 1000+ tools and eliminates manual work forever.",
     "primaryCTA": "Start Free Trial",
-    "secondaryCTA": "Watch Demo"
+    "secondaryCTA": "Watch Demo",
+    "demoVideoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+  },
+  "chatbot": {
+    "apiEndpoint": "http://raspberry.muttahhid.com/webhook/d9f11cb6-011e-4514-97c6-44035c28e444"
   },
   "problem": {
     "headline": "Manual work is slowing your business down.",
@@ -19,33 +27,64 @@
     "headline": "From Manual to Intelligent — In Seconds.",
     "description": "We connect your existing tools with 1000+ integrations, and power them with automation and AI — so your business works faster, smarter, and with fewer errors."
   },
-  "benefits": [
-    {
-      "icon": "⚡",
-      "title": "Save Time",
-      "description": "Eliminate repetitive manual tasks instantly."
-    },
-    {
-      "icon": "🔗",
-      "title": "1000+ Integrations",
-      "description": "Works with your favorite tools out of the box."
-    },
-    {
-      "icon": "🤖",
-      "title": "AI-Powered",
-      "description": "Smarter workflows that learn and adapt."
-    },
-    {
-      "icon": "📈",
-      "title": "Boost Productivity",
-      "description": "Focus your team on what truly matters."
-    },
-    {
-      "icon": "🌍",
-      "title": "Scalable",
-      "description": "Solutions that grow as your business grows."
-    }
-  ],
+  "features": {
+    "title": "Why Choose AI-Era Solutions",
+    "description": "Experience the power of intelligent automation with benefits that transform your business",
+    "primaryFeatures": [
+      {
+        "icon": "⚡",
+        "title": "Save Time",
+        "description": "Eliminate repetitive manual tasks instantly."
+      },
+      {
+        "icon": "🔗",
+        "title": "1000+ Integrations",
+        "description": "Works with your favorite tools out of the box."
+      },
+      {
+        "icon": "🤖",
+        "title": "AI-Powered",
+        "description": "Smarter workflows that learn and adapt."
+      },
+      {
+        "icon": "📈",
+        "title": "Boost Productivity",
+        "description": "Focus your team on what truly matters."
+      },
+      {
+        "icon": "🌍",
+        "title": "Scalable",
+        "description": "Solutions that grow as your business grows."
+      }
+    ],
+    "additionalFeatures": [
+      {
+        "icon": "🔒",
+        "title": "Enterprise Security",
+        "description": "Bank-grade encryption and compliance standards."
+      },
+      {
+        "icon": "📊",
+        "title": "Advanced Analytics",
+        "description": "Deep insights and performance tracking."
+      },
+      {
+        "icon": "🎯",
+        "title": "Custom Solutions",
+        "description": "Tailored automation for your unique needs."
+      },
+      {
+        "icon": "🚀",
+        "title": "Rapid Deployment",
+        "description": "Get up and running in days, not months."
+      },
+      {
+        "icon": "🔄",
+        "title": "Continuous Updates",
+        "description": "Always evolving with the latest AI capabilities."
+      }
+    ]
+  },
   "howItWorks": {
     "headline": "How It Works",
     "steps": [
@@ -126,23 +165,13 @@
     "cta": "Book Your Free Demo"
   },
   "contact": {
-    "apiEndpoint": "http://raspberrypi.muttahhid.com/webhook/246b4a7a-8cad-4d6e-96aa-92c1b5055676",
+    "apiEndpoint": "https://raspberry.muttahhid.com/webhook/2fd2dc4f-2781-4438-8195-0c10b3aca952",
+    "title": "Get Started Today",
+    "description": "Ready to transform your business? Let's discuss your automation needs.",
     "fields": [
       {
-        "name": "firstName",
-        "label": "First Name",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "lastName",
-        "label": "Last Name",
-        "type": "text",
-        "required": true
-      },
-      {
-        "name": "organisation",
-        "label": "Organisation",
+        "name": "name",
+        "label": "Name",
         "type": "text",
         "required": true
       },
@@ -153,9 +182,9 @@
         "required": true
       },
       {
-        "name": "phoneNumber",
-        "label": "Phone Number",
-        "type": "tel",
+        "name": "subject",
+        "label": "Subject",
+        "type": "text",
         "required": true
       },
       {
@@ -165,5 +194,67 @@
         "required": true
       }
     ]
-  }
+  },
+  "footer": {
+    "companyInfo": {
+      "name": "AI-Era Solutions",
+      "address": "123 Innovation Drive, Tech City, TC 12345",
+      "phone": "+1 (555) 123-4567",
+      "email": "info@ai-era-solutions.com"
+    },
+    "socialMedia": [
+      {
+        "name": "Facebook",
+        "url": "https://facebook.com/ai-era-solutions",
+        "icon": "facebook"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/ai-era-solutions",
+        "icon": "twitter"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/company/ai-era-solutions",
+        "icon": "linkedin"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com/ai-era-solutions",
+        "icon": "instagram"
+      }
+    ]
+  },
+  "caseStudies": [
+    {
+      "title": "E-commerce Giant Saves 40 Hours Weekly",
+      "description": "Automated inventory management and customer support systems reduced manual work by 85%",
+      "metrics": "85% reduction in manual tasks",
+      "industry": "E-commerce"
+    },
+    {
+      "title": "Healthcare Provider Streamlines Patient Care",
+      "description": "Automated appointment scheduling and patient data processing improved efficiency",
+      "metrics": "50% faster patient processing",
+      "industry": "Healthcare"
+    },
+    {
+      "title": "Manufacturing Company Optimizes Production",
+      "description": "AI-driven supply chain automation reduced costs and improved delivery times",
+      "metrics": "30% cost reduction",
+      "industry": "Manufacturing"
+    },
+    {
+      "title": "Financial Services Automates Compliance",
+      "description": "Automated regulatory reporting and risk assessment processes",
+      "metrics": "99.9% compliance accuracy",
+      "industry": "Financial Services"
+    },
+    {
+      "title": "Educational Institution Enhances Learning",
+      "description": "Automated grading and student progress tracking systems",
+      "metrics": "60% time savings for educators",
+      "industry": "Education"
+    }
+  ]
 }

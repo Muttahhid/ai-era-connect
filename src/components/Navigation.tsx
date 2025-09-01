@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
-export const Navigation = () => {
+interface NavigationProps {
+  logoUrl: string;
+  logoAlt: string;
+}
+
+export const Navigation = ({ logoUrl, logoAlt }: NavigationProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -29,8 +34,13 @@ export const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="font-bold text-2xl">
-            <span className="ai-gradient-text">AI-Era Solutions</span>
+          <div className="flex items-center space-x-3">
+            <img 
+              src={logoUrl} 
+              alt={logoAlt}
+              className="h-8 w-auto"
+            />
+            <span className="font-bold text-xl ai-gradient-text">AI-Era Solutions</span>
           </div>
           
           {/* Navigation Links */}
@@ -42,7 +52,7 @@ export const Navigation = () => {
               Home
             </button>
             <button 
-              onClick={() => scrollToSection('dashboard')}
+              onClick={() => scrollToSection('features')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Features

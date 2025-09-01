@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-ai-network.jpg";
+import { VideoModal } from "./VideoModal";
+import { useState } from "react";
 
 interface HeroConfig {
   headline: string;
   subtext: string;
   primaryCTA: string;
   secondaryCTA: string;
+  demoVideoUrl: string;
 }
 
 interface HeroSectionProps {
@@ -13,6 +16,15 @@ interface HeroSectionProps {
 }
 
 export const HeroSection = ({ config }: HeroSectionProps) => {
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
@@ -36,7 +48,7 @@ export const HeroSection = ({ config }: HeroSectionProps) => {
         <div className="max-w-5xl mx-auto space-y-8">
           {/* Headline */}
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            <span className="text-gradient-hero">
+            <span className="text-white">
               {config.headline}
             </span>
           </h1>
@@ -51,14 +63,16 @@ export const HeroSection = ({ config }: HeroSectionProps) => {
             <Button 
               variant="hero" 
               size="lg"
-              className="ai-glow-button pulse-glow text-lg px-8 py-4"
+              className="ai-glow-button text-lg px-8 py-4"
+              onClick={scrollToContact}
             >
-              🚀 {config.primaryCTA}
+              {config.primaryCTA}
             </Button>
             <Button 
               variant="outline" 
               size="lg"
               className="ai-neon-border text-lg px-8 py-4"
+              onClick={() => setIsVideoModalOpen(true)}
             >
               {config.secondaryCTA}
             </Button>
@@ -70,6 +84,13 @@ export const HeroSection = ({ config }: HeroSectionProps) => {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-1 h-16 bg-gradient-primary rounded-full opacity-60" />
       </div>
+
+      {/* Video Modal */}
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+        videoUrl={config.demoVideoUrl}
+      />
     </section>
   );
 };

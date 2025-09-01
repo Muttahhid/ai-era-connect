@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { HeroSection } from "@/components/HeroSection";
+import { FeaturesSection } from "@/components/FeaturesSection";
 import { DashboardSection } from "@/components/DashboardSection";
 import { CustomerSupportSection } from "@/components/CustomerSupportSection";
 import { WorkflowAutomationSection } from "@/components/WorkflowAutomationSection";
@@ -8,6 +9,8 @@ import { ProcessSection } from "@/components/ProcessSection";
 import { WorkInActionSection } from "@/components/WorkInActionSection";
 import { FAQSection } from "@/components/FAQSection";
 import { ContactForm } from "@/components/ContactForm";
+import { Footer } from "@/components/Footer";
+import { Chatbot } from "@/components/Chatbot";
 import landingConfig from "@/config/landing-config.json";
 
 const Index = () => {
@@ -21,11 +24,20 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      <Navigation logoUrl={config.logo.url} logoAlt={config.logo.alt} />
       
       <main>
         <div id="hero">
           <HeroSection config={config.hero} />
+        </div>
+        
+        <div id="features">
+          <FeaturesSection 
+            title={config.features.title}
+            description={config.features.description}
+            primaryFeatures={config.features.primaryFeatures}
+            additionalFeatures={config.features.additionalFeatures}
+          />
         </div>
         
         <div id="dashboard">
@@ -45,7 +57,7 @@ const Index = () => {
         </div>
         
         <div id="work-in-action">
-          <WorkInActionSection />
+          <WorkInActionSection caseStudies={config.caseStudies} />
         </div>
         
         <div id="faq">
@@ -57,17 +69,13 @@ const Index = () => {
         </div>
       </main>
       
-      {/* Footer */}
-      <footer className="py-12 border-t border-primary/20 bg-gradient-card">
-        <div className="container mx-auto px-6 text-center">
-          <div className="mb-6">
-            <span className="ai-gradient-text text-2xl font-bold">AI-Era Solutions</span>
-          </div>
-          <p className="text-muted-foreground">
-            © 2024 AI-Era Solutions. Transforming businesses with intelligent automation.
-          </p>
-        </div>
-      </footer>
+      <Footer 
+        companyInfo={config.footer.companyInfo}
+        socialMedia={config.footer.socialMedia}
+        logoUrl={config.logo.url}
+      />
+
+      <Chatbot apiEndpoint={config.chatbot.apiEndpoint} />
     </div>
   );
 };

@@ -149,7 +149,7 @@
   }
 
   .pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite alternate;
+    animation: pulse-glow 3s ease-in-out infinite alternate;
   }
 }
 
@@ -176,6 +176,6 @@
 }
 
 @keyframes pulse-glow {
-  0% { box-shadow: 0 0 20px hsl(var(--ai-pink) / 0.3); }
-  100% { box-shadow: 0 0 40px hsl(var(--ai-blue) / 0.5), 0 0 60px hsl(var(--ai-cyan) / 0.3); }
+  0% { box-shadow: 0 0 10px hsl(var(--primary) / 0.2); }
+  100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.4), 0 0 30px hsl(var(--accent) / 0.2); }
 }

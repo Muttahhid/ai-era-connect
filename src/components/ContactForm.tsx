@@ -14,6 +14,8 @@ interface ContactField {
 
 interface ContactConfig {
   apiEndpoint: string;
+  title: string;
+  description: string;
   fields: ContactField[];
 }
 
@@ -72,10 +74,10 @@ export const ContactForm = ({ config }: ContactFormProps) => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="ai-gradient-text">Get Started Today</span>
+              <span className="ai-gradient-text">{config.title}</span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              Ready to transform your business? Let's discuss your automation needs.
+              {config.description}
             </p>
           </div>
           
@@ -120,7 +122,7 @@ export const ContactForm = ({ config }: ContactFormProps) => {
                   disabled={isSubmitting}
                   className="ai-glow-button text-lg px-12 py-4"
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message 🚀'}
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </div>
             </form>
